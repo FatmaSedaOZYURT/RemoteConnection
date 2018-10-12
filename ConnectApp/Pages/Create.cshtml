@@ -1,0 +1,23 @@
+﻿@page
+@model ConnectApp.Pages.CreateModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<html>
+
+    <body>
+
+        <p>Enter your information</p>
+        <div asp-validation-summary="All"></div>
+        <form method="post">
+
+            <div>
+                Name: <input asp-for="Customer.Name" />
+                SurName: <input asp-for="Customer.SurName" />
+            </div>
+            <input type="submit"/>
+</form>
+
+
+    </body>
+
+</html>
